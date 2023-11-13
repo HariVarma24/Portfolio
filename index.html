@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/625b625778.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>P<span>ortfolio</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-End Developer</p>
+                <h1>Hi,I'm <span>Hari</span><br> Varma From India</h1>
+            </div>
+        </div>
+    </div>
+    <!--------------------------about--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user_img.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hello, G.J.Sri Hari varma, a dedicated student currently pursuing my Bachelor of Technology in E.C.E at ANITS,
+                        motivated Stack development enthusiast ready to embark on an exciting journey in the professional world.
+                        This passion drives me to continually seek challenges, push boundaries, and strive for excellence in every endeavor.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links"onclick="opentab('experience')">Industrial Exposure</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-end Web Technologies</span><br>HTML, CSS, Javascript</li>
+                            <li><span>Programming Languages</span><br> Proficient in Python,Java,C</li>
+                            <li><span>Problem Solving</span><br> I thrive on dissecting complex problems 
+                                and finding innovative solutions.</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>All India Radio</span><br>Learnt about STL and AM Transmitter.</li>
+                            <li><span>BSNL</span><br>Gained practical insights into the telecom industry, and observed the application of theoretical concepts in a real-world setting.</li>
+                            <li><span>NSTL</span><br>Industrial Visit</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech in ECE, ANITS</span><br>2020-2024</li>
+                            <li><span>12th in Sri Chaitanya Jr. Kalasala</span><br>2018-2020</li>
+                            <li><span>10th in Sri Chaitanya E.M School</span><br>2018</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------services----------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Text to Speech Converter</h2>
+                    <p>The objective of this project is to convert the text into voice with the click of a button. This creates a text area and a button in the HTML, styles using CSS, and then uses JavaScript to add an event listener to the button that converts the text in the text area to speech when the button is clicked.</p>
+                    <a href="https://harivarma24.github.io/text2speech/" target="_blank">learn more</a>
+                
+                </div>
+                <div>
+                    <i class="fa-brands fa-spotify"></i>
+                    <h2>Spotify Clone Website</h2>
+                    <p>Created a simple Spotify clone using HTML alone won't provide the functionality of the actual Spotify application, as it requires more advanced technologies like JavaScript for interactivity and a backend for handling data and user authentication. However, I created a basic static webpage that mimics the appearance of Spotify.</p>
+                    <a href="https://harivarma24.github.io/Spotiffyy/" target="_blank">learn more</a>
+                
+                </div>
+                <div>
+                    <i class="fa-solid fa-plant-wilt"></i>
+                    <h2>Plant Watering System</h2>
+                    <p>The moisture sensor in the project allows the water 
+                        pump to be triggered so that the plants get their water 
+                        supply.This is a creative and compact project, ideal for 
+                        small living spaces. </p>
+                    <a href="#">learn more</a>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------portfolio--------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Certificates</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/w1.png">
+                <div class="layer">
+                    <h3>Java Full Stack</h3>
+                    <p>Certified on completing Java Full Stack course at WIPRO.</p>
+                    <a href="https://drive.google.com/file/d/1bOs61Cyjg_XnrA6IXXng6GaeLV1ZYCMf/view" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/w2.jpg">
+                <div class="layer">
+                    <h3>Python For Beginners</h3>
+                    <p>Certified on completing Python for Beginners course at Infosys Springboard.</p>
+                    <a href="https://infyspringboard.onwingspan.com/public-assets/infosysheadstart/cert/lex_auth_01329486483474841635747_shared/1-8344ed70-2d4f-45a6-a96b-a22309477ba1.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/w3.png">
+                <div class="layer">
+                    <h3>Web Development-Bootcamp 2023</h3>
+                    <p>Certified on completing Web Development course in Udemy.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+    
+</div>
+
+<!-----------contact-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>hariv2443@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8985463256</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/harivarma.g.98"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/HariMBVK?t=5kkDv-aY2nF4rX0Jyr_UVQ&s=08"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com/harivarma.24?igshid=OWlidGg5a3B1Z3A0"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/g-hari-varma-827709249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/REsume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Varma. <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxH1AJNO4_NOd-cXWT9NkqWU2_zYoYWH8tUL-CtPQdqjR2KMWa2A6o5OfurGcdJKJAr/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML= ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
